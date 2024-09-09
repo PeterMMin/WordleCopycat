@@ -40,6 +40,7 @@ def playWordle():
     if hint == "GGGGG":
       print("Yay you win")
       win="Y"
+      return win
       break
 
 
@@ -47,3 +48,4 @@ def playWordle():
   if hint != "GGGGG":
     print("You lose the word was ", word)
     win= "N"
+    return win

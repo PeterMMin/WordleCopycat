@@ -1,3 +1,10 @@
+"""
+Defines the Wordle game logic, including the correct word, a function to make a guess, and the main game loop.
+
+The `makeAGuess()` function takes a user's guess as input and returns a hint string indicating which letters in the guess are correct, in the wrong position, or not in the word.
+
+The `playWordle()` function runs the main game loop, prompting the user for guesses and printing the hint for each guess. The game continues until the user correctly guesses the word or runs out of attempts.
+"""
 # TASK A: Define a variable 'word' that holds the correct word for the wordle game
 word= "flick"
 win= ""

@@ -1,3 +1,8 @@
+"""
+The `fight_player` function takes two `Character` objects and determines the winner based on their `count` attribute. If the first character's `count` is greater than the second, the first character is the winner. If the counts are equal, the second character is the winner. If the first character's `count` is less than the second, the second character is the winner.
+
+The `fight` function takes a `Character` object representing the player and a `Character` object representing the dragon. It calls the `fight_player` function to determine the winner, then prints out the counts of the player and dragon characters and a message indicating whether the player won or lost.
+"""
 from character import Character
 from item import Item
 from wordle import playWordle
@@ -38,7 +43,6 @@ if d1 == "Y":
         fight(character, dragon)
         
     if d2 == "N":
-        print("You run into a wizard.")
         wizard = Character(2, ["token1", "token2"], {"a":"If you want one of my tokens, you must play wordle!", "b": "Congrats. Pick up my token!"})
         wizard.talk_to_player("a")
         
@@ -69,3 +73,5 @@ if d1 == "Y":
         
         print("It's time to go fight the dragon!")
         fight(character, dragon)
+
+        print("You run into a wizard.")
